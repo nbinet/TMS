@@ -4,12 +4,13 @@ import facebook from "../assets/icones/facebook.svg";
 import twitter from "../assets/icones/twitter.svg";
 import instagram from "../assets/icones/instagram.svg";
 import linkedin from "../assets/icones/linkedin.svg";
-import { link } from "fs";
 
 export const HeaderComponent = () => {
   return (
     <div style={{ backgroundColor: "#3238BA" }}>
-      <img src={home} />
+      <Link to ="/Login">
+        <img src={home} alt="Bouton d'accueil" />
+      </Link>
     </div>
   );
 };
@@ -58,10 +59,10 @@ export const FooterComponent = () => {
             alignItems: "center",
           }}
         >
-          <img src={facebook} />
-          <img src={twitter} />
-          <img src={instagram} />
-          <img src={linkedin} />
+          <img src={facebook} alt="Logo Facebook" />
+          <img src={twitter} alt="Logo Twitter"/>
+          <img src={instagram} alt="Logo Instagram"/>
+          <img src={linkedin} alt="Logo Linkedin"/>
         </div>
       </div>
     </div>
