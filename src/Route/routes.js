@@ -1,7 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { LoginPage } from "../scenes/Login/login";
 import { MapBuilding } from "../scenes/MapBuilding/MapBuilding";
+import {
+  HeaderComponent,
+  FooterComponent,
+} from "../components/HeaderFooterComponents";
 
 // Some folks find value in a centralized route config.
 // A route config is just data. React is great at mapping
@@ -25,15 +29,8 @@ export default function RouteConfigExample() {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/login">login</Link>
-          </li>
-          <li>
-            <Link to="/mapbuilding">mapbuilding</Link>
-          </li>
-        </ul>
-
+        <HeaderComponent />
+        <FooterComponent />
         <Switch>
           {routes.map((route, i) => (
             <RouteWithSubRoutes key={i} {...route} />
