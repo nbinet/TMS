@@ -1,11 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { LoginPage } from "../scenes/Login/login";
 import { MapBuilding } from "../scenes/MapBuilding/MapBuilding";
-import {
-  HeaderComponent,
-  FooterComponent,
-} from "../components/HeaderFooterComponents";
+import { HeaderComponent } from "../components/header/HeaderComponent";
+import { FooterComponent } from "../components/footer/FooterComponent";
 
 // Some folks find value in a centralized route config.
 // A route config is just data. React is great at mapping
