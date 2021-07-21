@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import { LoginPage } from "../scenes/Login/Login";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { LoginPage } from "../scenes/Login/login";
 import { MapBuilding } from "../scenes/MapBuilding/MapBuilding";
 
 // Some folks find value in a centralized route config.
@@ -17,11 +12,11 @@ import { MapBuilding } from "../scenes/MapBuilding/MapBuilding";
 // way you'd do inside a `<Switch>`.
 const routes = [
   {
-    path: "/",
+    path: "/login",
     component: LoginPage,
   },
   {
-    path: "/MapBuilding",
+    path: "/mapbuilding",
     component: MapBuilding,
   },
 ];
@@ -32,10 +27,10 @@ export default function RouteConfigExample() {
       <div>
         <ul>
           <li>
-            <Link to="/tacos">Tacos</Link>
+            <Link to="/login">login</Link>
           </li>
           <li>
-            <Link to="/sandwiches">Sandwiches</Link>
+            <Link to="/mapbuilding">mapbuilding</Link>
           </li>
         </ul>
 
@@ -56,7 +51,7 @@ function RouteWithSubRoutes(route) {
   return (
     <Route
       path={route.path}
-      render={props => (
+      render={(props) => (
         // pass the sub-routes down to keep nesting
         <route.component {...props} routes={route.routes} />
       )}
