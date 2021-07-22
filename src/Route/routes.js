@@ -2,16 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { LoginPage } from "../scenes/Login/login";
 import { MapBuilding } from "../scenes/MapBuilding/mapbuilding";
-import {
-  HeaderComponent,
-  FooterComponent,
-} from "../components/HeaderFooterComponents";
 import { RoomBuilding } from "../scenes/RoomBuilding/roombuilding";
 import { HomePage } from "../scenes/Home/HomePage";
-import { MapBuilding } from "../scenes/MapBuilding/MapBuilding";
 import { HeaderComponent } from "../components/header/HeaderComponent";
 import { FooterComponent } from "../components/footer/FooterComponent";
 import { batAamphiA } from "../components/plans/batA/BatAamphiA";
+import { ParamsPage } from "../scenes/ParamsPage/paramspage";
 
 
 // Some folks find value in a centralized route config.
@@ -41,6 +37,10 @@ const routes = [
   {
     path: "/batAamphiA",
     component: batAamphiA,
+  },
+  {
+    path: "/paramspage",
+    component: ParamsPage,
   },
 ];
 

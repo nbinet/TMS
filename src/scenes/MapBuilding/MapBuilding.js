@@ -13,19 +13,19 @@ export const MapBuilding = () => {
       <p className="MapBuilding_title desktop"> Vous souhaitez</p>
       <p className="MapBuilding_title mobile">Choissisez votre bâtiment</p>
       <div className="Container">
-        <button className="building b1"><Link to ="./roombuilding">Bat.A</Link></button>
+        <button className="building b1"><Link className="buildlink" to ="./roombuilding">Bat.A</Link></button>
         
-        <button className="building b2"><Link to ="./roombuilding">Bat.B</Link></button>
+        <button className="building b2"><Link className="buildlink"to ="./roombuilding">Bat.B</Link></button>
     
-        <button className="building b3"><Link to ="./roombuilding">Bat.C</Link></button>
+        <button className="building b3"><Link className="buildlink"to ="./roombuilding">Bat.C</Link></button>
       
-        <button className="building b4"><Link to ="./roombuilding">Bat.D</Link></button>
+        <button className="building b4"><Link className="buildlink"to ="./roombuilding">Bat.D</Link></button>
       
-        <button className="building b5"><Link to ="./roombuilding">Bat.E</Link></button>
+        <button className="building b5"><Link className="buildlink"to ="./roombuilding">Bat.E</Link></button>
       
-        <button className="building b6"><Link to ="./roombuilding">Bat.F</Link></button>
+        <button className="building b6"><Link className="buildlink"to ="./roombuilding">Bat.F</Link></button>
       
-        <button className="building b7"><Link to ="./roombuilding">Bat.G</Link></button>     
+        <button className="building b7"><Link className="buildlink"to ="./roombuilding">Bat.G</Link></button>     
       
         <button className="building b7 hidden" style={{opacity:0}
         }></button>     

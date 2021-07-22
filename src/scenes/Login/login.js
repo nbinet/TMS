@@ -9,18 +9,18 @@ import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
-import { createTheme } from "@material-ui/core/styles";
+// import { createTheme } from "@material-ui/core/styles";
 
-const theme = createTheme({
-    palette: {
-      primary: {
-        main: "#3949ab",
-      },
-      secondary: {
-        main: "#ec407a",
-      },
-    },
-  });
+// const theme = createTheme({
+//     palette: {
+//       primary: {
+//         main: "#3949ab",
+//       },
+//       secondary: {
+//         main: "#ec407a",
+//       },
+//     },
+//   });
 
 
 export const LoginPage = () => {
@@ -66,7 +66,7 @@ export const LoginPage = () => {
                     </Link>
                   </Grid>
                 </Grid>
-                <Button to ='/MapBuilding'
+                <Button to ='./mapbuilding'
                   type="submit"
                   fullWidth
                   variant="contained"
@@ -76,7 +76,7 @@ export const LoginPage = () => {
                 </Button>
               </Grid>
             </form>
-            <Link to ='/MapBuilding'><h2>Avance</h2></Link>
+            <Link to ='./home'><h2>Avance</h2></Link>
             <div className="App-sign">
                 <img
                 src={man}

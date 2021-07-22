@@ -1,13 +1,11 @@
-// import { Link } from "react-router-dom";
+
 import facebook from "../../assets/icones/facebook.svg";
 import twitter from "../../assets/icones/twitter.svg";
 import instagram from "../../assets/icones/instagram.svg";
 import linkedin from "../../assets/icones/linkedin.svg";
 import "./FooterComponent.scss";
-// import { useTheme } from "@material-ui/core/styles";
 
 export const FooterComponent = () => {
-  // const theme = useTheme();
   return (
     <div className="footer">
       <div className="adress">

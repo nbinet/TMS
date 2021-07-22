@@ -1,0 +1,39 @@
+ul {
+	list-style-type: none;
+}
+
+.arrow {
+	position: absolute;
+	top:15%;
+	left:4%;
+}
+.profilpic {
+  margin-left: 30%;
+	margin-top: 20%;
+}
+.titletext {
+	text-align: center;
+	font-size:28px;
+	font-weight: 700;
+}
+.smalltext{
+	text-align: center;
+	font-size: 18px;
+	margin-bottom:0;
+}
+.container_preferences {
+	width:60vw;
+	display:flex;	
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	.group_preferences {
+		width:100%;
+		display:flex;	
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+}
+  
