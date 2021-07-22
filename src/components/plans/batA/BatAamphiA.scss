@@ -1,0 +1,34 @@
+.pageAmphi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  .textAmphi {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .textBat {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: 900;
+  }
+
+  .amphi {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      width: 50px;
+    }
+  }
+}
