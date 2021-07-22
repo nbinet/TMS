@@ -8,10 +8,11 @@ $breakpoint: 768px;
 	font-size:32px;
 	font-weight: 700;
 	text-align: center;
-	margin-top:0%;
+	margin-top:23%;
 }
 select {
-	margin-left:46vw;
+	margin-left:42vw;
+	margin-bottom:4%;
 }
 .Container_roombuilding {
 	margin-top:5vh;
@@ -70,9 +71,11 @@ select {
 	}
 }
 @media (min-width: $breakpoint) {
-	.roombuilding_title
+	.roombuilding_title{
+		margin-top:20%;
+	}
 	select {
-		margin-left:50vw;
+		margin-left:47.5vw;
 	}
 	.Container_roombuilding {
 		height: 80%;

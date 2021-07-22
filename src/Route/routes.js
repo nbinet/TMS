@@ -35,7 +35,7 @@ const routes = [
     component: RoomBuilding,
   },
   {
-    path: "/batAamphiA",
+    path: "/bataamphia",
     component: batAamphiA,
   },
   {

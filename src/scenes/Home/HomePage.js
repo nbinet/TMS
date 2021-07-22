@@ -13,7 +13,7 @@ export const  HomePage = () => {
             <div className="selection-container">
                 <div className="selection-content">
                     <img src={Seats} className="Home-icone" alt="Sièges" />
-                    <Button to ='/MapBuilding'
+                    <Button to ='/MapBuilding' className="home_button"
                         type="submit"
                         variant="contained"
                         color="secondary"
@@ -24,23 +24,27 @@ export const  HomePage = () => {
                 
                 <div className="selection-content">
                     <img src={Mapicon} className="Home-icone" alt="Carte" />
-                    <Button to ='/mapbuilding'
+                    <Button to ='/mapbuilding' className="home_button"
                         type="submit"
                         variant="contained"
                         color="secondary"
                         >
+                        <Link to ="/mapbuilding" >    
                         Chercher une salle
+                        </Link>
                     </Button>
                 </div>
                 
                 <div className="selection-content">
                     <img src={Params} className="Home-icone" alt="Engrenages" />
-                    <Button to ='/mapbuilding'
+                    <Button to ='/mapbuilding' className="home_button"
                         type="submit"
                         variant="contained"
                         color="secondary"
                         >
+                        <Link to ="paramspage">
                         Accéder à vos paramètres
+                        </Link>
                     </Button>
                 </div>               
             </div>
