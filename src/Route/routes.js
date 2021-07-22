@@ -5,6 +5,7 @@ import { HomePage } from "../scenes/Home/HomePage";
 import { MapBuilding } from "../scenes/MapBuilding/MapBuilding";
 import { HeaderComponent } from "../components/header/HeaderComponent";
 import { FooterComponent } from "../components/footer/FooterComponent";
+import { batAamphiA } from "../components/plans/batA/BatAamphiA";
 
 // Some folks find value in a centralized route config.
 // A route config is just data. React is great at mapping
