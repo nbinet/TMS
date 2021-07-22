@@ -1,21 +1,13 @@
 import { Link } from "react-router-dom";
-import home from "../assets/icones/home.svg";
-import facebook from "../assets/icones/facebook.svg";
-import twitter from "../assets/icones/twitter.svg";
-import instagram from "../assets/icones/instagram.svg";
-import linkedin from "../assets/icones/linkedin.svg";
-
-export const HeaderComponent = () => {
-  return (
-    <div style={{ backgroundColor: "#3238BA" }}>
-      <Link to="/Login">
-        <img src={home} alt="Bouton d'accueil" />
-      </Link>
-    </div>
-  );
-};
+import facebook from "../../assets/icones/facebook.svg";
+import twitter from "../../assets/icones/twitter.svg";
+import instagram from "../../assets/icones/instagram.svg";
+import linkedin from "../../assets/icones/linkedin.svg";
+import { link } from "fs";
+// import { useTheme } from "@material-ui/core/styles";
 
 export const FooterComponent = () => {
+  // const theme = useTheme();
   return (
     <div
       style={{
@@ -35,7 +27,6 @@ export const FooterComponent = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          color: "ffffff",
         }}
       >
         <span>Université Paris Nanterre</span>
