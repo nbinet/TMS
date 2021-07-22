@@ -8,7 +8,7 @@ import linkedin from "../assets/icones/linkedin.svg";
 export const HeaderComponent = () => {
   return (
     <div style={{ backgroundColor: "#3238BA" }}>
-      <Link to ="/Login">
+      <Link to="/Login">
         <img src={home} alt="Bouton d'accueil" />
       </Link>
     </div>
@@ -27,7 +27,6 @@ export const FooterComponent = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        color: "ffffff",
       }}
     >
       <div
@@ -60,9 +59,9 @@ export const FooterComponent = () => {
           }}
         >
           <img src={facebook} alt="Logo Facebook" />
-          <img src={twitter} alt="Logo Twitter"/>
-          <img src={instagram} alt="Logo Instagram"/>
-          <img src={linkedin} alt="Logo Linkedin"/>
+          <img src={twitter} alt="Logo Twitter" />
+          <img src={instagram} alt="Logo Instagram" />
+          <img src={linkedin} alt="Logo Linkedin" />
         </div>
       </div>
     </div>
