@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { LoginPage } from "../scenes/Login/login";
+import { HomePage } from "../scenes/Home/HomePage";
 import { MapBuilding } from "../scenes/MapBuilding/MapBuilding";
 import { HeaderComponent } from "../components/header/HeaderComponent";
 import { FooterComponent } from "../components/footer/FooterComponent";
@@ -18,8 +19,16 @@ const routes = [
     component: LoginPage,
   },
   {
+    path: "/home",
+    component: HomePage,
+  },
+  {
     path: "/mapbuilding",
     component: MapBuilding,
+  },
+  {
+    path: "/batAamphiA",
+    component: batAamphiA,
   },
 ];
 
@@ -28,12 +37,12 @@ export default function RouteConfigExample() {
     <Router>
       <div>
         <HeaderComponent />
-        <FooterComponent />
         <Switch>
           {routes.map((route, i) => (
             <RouteWithSubRoutes key={i} {...route} />
           ))}
         </Switch>
+        <FooterComponent />
       </div>
     </Router>
   );

@@ -49,10 +49,10 @@ export const FooterComponent = () => {
             alignItems: "center",
           }}
         >
-          <img src={facebook} />
-          <img src={twitter} />
-          <img src={instagram} />
-          <img src={linkedin} />
+          <img src={facebook} alt="Logo Facebook" />
+          <img src={twitter} alt="Logo Twitter" />
+          <img src={instagram} alt="Logo Instagram" />
+          <img src={linkedin} alt="Logo Linkedin" />
         </div>
       </div>
     </div>
