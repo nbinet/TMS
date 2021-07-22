@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapBuilding } from "../../MapBuilding/MapBuilding";
+import { MapBuilding } from "../../MapBuilding/mapbuilding";
 
 function List(props) {
     const { build } = props;
