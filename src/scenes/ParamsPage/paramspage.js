@@ -3,6 +3,12 @@ import { Link } from "react-router-dom"
 import pp from "../../assets/pngs/pp.png";
 import arrow from "../../assets/svgs/leftarrow.svg";
 import heart from "../../assets/svgs/smallheart.svg"
+import heartLiked from "../../assets/svgs/likedheart.svg"
+
+function liked(e){ 
+	e.target.setAttribute('src',
+	{heartLiked})
+}
 export const ParamsPage = () => {
 	return (
 		<div className="ParamsPage">
@@ -21,16 +27,24 @@ export const ParamsPage = () => {
 				<p className="titletext preferences_title">Votre historique de salles:</p>
 				<ul className ="container_preferences">
 					<div className="group_preferences">
-						<img src={heart} alt="favoris">
+						<img src={heart} onClick="src={arrow}" alt="favoris">
 						</img><p className="smalltext preferences_lines">Amphi. A - Bat. A</p>
 					</div>
 					<div className="group_preferences">
-					<img src={heart} alt="favoris">
-					</img><p className="smalltext preferences_lines">Amphi. A - Bat. A</p>
+					<img src={heart} onClick={liked} alt="favoris">
+					</img><p className="smalltext preferences_lines">Salle D302 - Bat. D</p>
 					</div>
 					<div className="group_preferences">
 					<img src={heart} alt="favoris">
-					</img><p className="smalltext preferences_lines">Amphi. A - Bat. A</p>
+					</img><p className="smalltext preferences_lines">Amphi. D - Bat. D</p>
+					</div>
+					<div className="group_preferences">
+					<img src={heartLiked} alt="favoris">
+					</img><p className="smalltext preferences_lines">Salle A003 - Bat. A</p>
+					</div>
+					<div className="group_preferences">
+					<img src={heart} alt="favoris">
+					</img><p className="smalltext preferences_lines">Salle E412 - Bat. E</p>
 					</div>
 
 				</ul>

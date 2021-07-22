@@ -7,6 +7,13 @@
     font-size: calc(16px + 2vmin);
 
 }
+.home_button {
+
+    outline: none;
+  	text-decoration: none;
+	color:#FFFFFF;
+
+}
 
 .selection-container{
     margin:32px;

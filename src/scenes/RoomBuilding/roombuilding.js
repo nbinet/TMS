@@ -8,7 +8,8 @@ export const RoomBuilding= ()=> {
       src= {arrow}
       alt= "flèche retour" >
       </img>
-			<p className="roombuilding_title" >Bat.A</p>
+			<p className="roombuilding_title mobile" >Bat.A</p>
+			<p className="roombuilding_title desktop" >Batiment A</p>
 			<select name="floor" id="floor select">
    			<option value="floor">R.D.C</option>
     		<option value="floor1">Etage 1</option>
@@ -19,9 +20,9 @@ export const RoomBuilding= ()=> {
 			<div className="Container_roombuilding"> 
 				<div className="stairs" >Escaliers</div>
 				<div className="Container_room">
-					<button className="room room_1" ><Link to ="/roompage">A001</Link></button>
-					<button className="room room_2" ><Link to ="/roompage">A002</Link></button>
-					<button className="room room_3" ><Link to ="/roompage">A003</Link></button>
+					<button className="room room_1" ><Link to ="/roompage" className="buildlink">A001</Link></button>
+					<button className="room room_2" ><Link to ="/roompage" className="buildlink">A002</Link></button>
+					<button className="room room_3" ><Link to ="/roompage" className="buildlink">A003</Link></button>
 					</div>	
 				<button className="amph amph1">Amphi A</button>
 				<span className="door"></span>
