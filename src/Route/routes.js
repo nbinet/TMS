@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { LoginPage } from "../scenes/Login/login";
-import { MapBuilding } from "../scenes/MapBuilding/MapBuilding";
+import { MapBuilding } from "../scenes/MapBuilding/mapbuilding";
 import {
   HeaderComponent,
   FooterComponent,
 } from "../components/HeaderFooterComponents";
+import { RoomBuilding } from "../scenes/RoomBuilding/roombuilding";
 
 // Some folks find value in a centralized route config.
 // A route config is just data. React is great at mapping
@@ -23,6 +24,10 @@ const routes = [
     path: "/mapbuilding",
     component: MapBuilding,
   },
+  {
+    path: "/roombuilding",
+    component: RoomBuilding,
+  },
 ];
 
 export default function RouteConfigExample() {
@@ -30,12 +35,12 @@ export default function RouteConfigExample() {
     <Router>
       <div>
         <HeaderComponent />
-        <FooterComponent />
         <Switch>
           {routes.map((route, i) => (
             <RouteWithSubRoutes key={i} {...route} />
           ))}
         </Switch>
+        <FooterComponent />
       </div>
     </Router>
   );
