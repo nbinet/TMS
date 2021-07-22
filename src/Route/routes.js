@@ -9,7 +9,6 @@ import { FooterComponent } from "../components/footer/FooterComponent";
 import { batAamphiA } from "../components/plans/batA/BatAamphiA";
 import { ParamsPage } from "../scenes/ParamsPage/paramspage";
 
-
 // Some folks find value in a centralized route config.
 // A route config is just data. React is great at mapping
 // data into components, and <Route> is a component.
