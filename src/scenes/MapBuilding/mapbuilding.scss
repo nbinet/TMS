@@ -1,0 +1,132 @@
+$breakpoint: 768px;
+.MapBuilding_title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.desktop {
+  opacity: 0;
+}
+.Container {
+  width: 80vw;
+  height: 50vh;
+  margin-left: 10%;
+  margin-bottom: 50px;
+  box-shadow: 0px 4px 30px 2px #00000033;
+  overflow: hidden;
+  //   position: absolute;
+
+  .building {
+    background-color: #fd527b;
+    border-radius: 4px;
+    border: none;
+    position: relative;
+    height: 6.7%;
+    cursor: pointer;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .b1 {
+    width: 28%;
+    top: 5.2%;
+    left: 10%;
+  }
+
+  .b2 {
+    width: 28%;
+    top: 5.2%;
+    left: 38%;
+  }
+  .b3 {
+    width: 28%;
+    top: 28.3%;
+    right: 50.6%;
+    transform-origin: top;
+    transform: rotate(90deg);
+  }
+  .b4 {
+    width: 28%;
+    top: 21.4%;
+    left: 24.1%;
+    transform-origin: top;
+    transform: rotate(90deg);
+  }
+  .b5 {
+    width: 50%;
+    top: 10.4%;
+    left: 16.5%;
+  }
+  .b6 {
+    width: 50%;
+    top: 31%;
+    left: 10%;
+  }
+  .b7 {
+    width: 50%;
+    top: 44%;
+    right: 40%;
+  }
+  .r1 {
+    width: 12%;
+    bottom: 14.8%;
+    right: 5.8%;
+    background-color: #c4c4c4;
+  }
+  .r2 {
+    width: 12%;
+    background-color: #c4c4c4;
+    top: 11.9%;
+    left: 1.5%;
+  }
+  .r3 {
+    width: 12%;
+    top: 11.9%;
+    background-color: #c4c4c4;
+    right: 29.3%;
+  }
+  .r4 {
+    width: 12%;
+    top: 11.9%;
+    background-color: #c4c4c4;
+    right: 4%;
+  }
+  .r5 {
+    width: 28%;
+    top: 22.4%;
+    left: 75.1%;
+    transform: rotate(90deg);
+    background-color: #c4c4c4;
+  }
+  .r6 {
+    width: 12%;
+    top: 45%;
+    right: 17.6%;
+    background-color: #c4c4c4;
+  }
+  .r7 {
+    width: 43%;
+    top: 43%;
+    left: -9%;
+    background-color: #c4c4c4;
+  }
+}
+
+@media (min-width: $breakpoint) {
+  .desktop {
+    opacity: 100%;
+  }
+  .mobile {
+    opacity: 0;
+  }
+  .Container {
+    height: 80vh;
+    width: 50%;
+    border-radius: 12px;
+    margin-left: 25%;
+    // position: absolute;
+  }
+}
