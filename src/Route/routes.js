@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { LoginPage } from "../scenes/Login/login";
+import { HomePage } from "../scenes/Home/HomePage";
 import { MapBuilding } from "../scenes/MapBuilding/MapBuilding";
 import {
   HeaderComponent,
@@ -19,6 +20,10 @@ const routes = [
   {
     path: "/login",
     component: LoginPage,
+  },
+  {
+    path: "/home",
+    component: HomePage,
   },
   {
     path: "/mapbuilding",
