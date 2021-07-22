@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
 import facebook from "../../assets/icones/facebook.svg";
 import twitter from "../../assets/icones/twitter.svg";
 import instagram from "../../assets/icones/instagram.svg";
 import linkedin from "../../assets/icones/linkedin.svg";
-import { link } from "fs";
 // import { useTheme } from "@material-ui/core/styles";
 
 export const FooterComponent = () => {

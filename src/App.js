@@ -3,7 +3,7 @@ import Router from './Route/routes'
 
 function App() {
   return (
-    <Router/>
+    <Router exact path="/"/>
   );
 }
 

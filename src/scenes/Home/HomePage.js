@@ -24,7 +24,7 @@ export const  HomePage = () => {
                 
                 <div className="selection-content">
                     <img src={Mapicon} className="Home-icone" alt="Carte" />
-                    <Button to ='/MapBuilding'
+                    <Button to ='/mapbuilding'
                         type="submit"
                         variant="contained"
                         color="secondary"
@@ -35,7 +35,7 @@ export const  HomePage = () => {
                 
                 <div className="selection-content">
                     <img src={Params} className="Home-icone" alt="Engrenages" />
-                    <Button to ='/MapBuilding'
+                    <Button to ='/mapbuilding'
                         type="submit"
                         variant="contained"
                         color="secondary"
