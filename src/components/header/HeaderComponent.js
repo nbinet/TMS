@@ -1,16 +1,12 @@
-import home from "../../assets/icones/home.svg";
 import { Link } from "react-router-dom";
+import home from "../../assets/icones/home.svg";
+import "./HeaderComponent.scss";
+
 export const HeaderComponent = () => {
   return (
-    <div style={{ 
-      backgroundColor: "#3238BA", 
-      height:"10vh"
-    }}>
-      <Link to ="/login"><img src={home} alt= "Bouton d'accueil " style= {{
-        position:"absolute",
-        top:"3%",
-        left:"5%"
-      }}/>
+    <div className="header">
+      <Link to="/login">
+        <img alt="login" className="img" src={home} />
       </Link>
     </div>
   );
