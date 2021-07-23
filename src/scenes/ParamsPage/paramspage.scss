@@ -1,3 +1,4 @@
+$breakpoint: 768px;
 ul {
 	list-style-type: none;
 }
@@ -20,6 +21,7 @@ ul {
 	text-align: center;
 	font-size: 18px;
 	margin-bottom:0;
+	margin-top:0;
 }
 .container_preferences {
 	width:60vw;
@@ -33,7 +35,31 @@ ul {
 		display:flex;	
 		justify-content: space-evenly;
 		align-items: center;
+		margin-bottom:10%;
+		.preferences_lines {
+			width:80%;
+		}
 	}
+}
 
+@media (min-width: $breakpoint) {
+	.profilpic {
+		margin-left: 45%;
+		  margin-top: 10%;
+	  }
+	  .container_preferences {
+		margin-top:10%;
+		margin-left:20%;
+		flex-direction: row;
+
+		.group_preferences {
+			justify-content: space-around;
+			align-items: center;
+			margin-bottom:10%;
+			.preferences_lines {
+				width:80%;
+			}
+		}
+}
 }
   
